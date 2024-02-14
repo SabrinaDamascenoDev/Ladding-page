@@ -1,0 +1,59 @@
+header{
+    width: 100%;
+    padding: 28px 8%;
+}
+
+#nav_bar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#nav_icon{
+    font-size: 24px;
+    color: #e9a209;
+
+}
+
+#nav_list{
+    display: flex;
+    list-style: none;
+    gap: 48px;
+
+}
+
+.nav-item a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #1d1d1dad;
+}
+
+.nav-item.active a{
+    color: #1d1d1d;
+    border-bottom: 3px solid #ffe100;
+    
+}
+
+.mobile_btn{
+    display: none;
+}
+
+.mobile_menu{
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .mobile_btn{
+        display: block;
+    }
+    .mobile_menu{
+        display: block;
+    }
+    #nav_list,
+    #nav_bar .btn_default{
+        display: none;
+    }
+
+}
